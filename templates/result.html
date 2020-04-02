@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title> Covid-19 Self Assessment</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename = 'images/coronavirus.png')}}" >
+    <meta name="google-site-verification" content="ypuILA1pR-Q0qm3wejPfcjJVYFkQFCKZgr9lAQOyrbc" />
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Flask, Coronavirus, Assessment, COVID-19, Covidassist, Covidassist.pythonanywhere.com, Pythonanywhere, DOH, Indusscience, HTML, CSS, India,
+    coronatest,covid, covid assist, self assessment">
+    <meta name="description" content="Covidassist is a  web application that helps in analyzing the symptoms a person might be feeling, take them as input data and based on guidelines
+    issued by the department of health, it can analyze a score and return the suggestion on, what the person should do next. Covidassist is developed in flask and hosted on pythonanywhere.com.
+    Covidassist is a self made project to help people on this time of crisis of coronavirus.">
+    <meta name="author" content="Krishna Rajiv Badde, Vansh Kukreja">
+    <style>
+
+h1 {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  text-align:center;
+  color: #ffffff;
+}
+#information {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-left:auto;margin-right:auto;
+}
+
+#information td, #information th {
+  border: 1px solid #ddd;
+  padding: 3px;
+  text-align:center;
+  font-size:25px;
+}
+
+#information tr:nth-child(even){background-color: #f0f6f7;}
+#information tr:nth-child(odd){background-color: #f7e7e8;}
+#information tr:hover {background-color: #ddd;}
+
+#information th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #4CAF50;
+  color: white;
+}
+#submit_button {
+                font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+                background-color: #FFA500;
+                color: #ffffff;
+                line-height: inherit;
+                display: inline-block;
+                width: 100%;
+                height:40px;
+                font-size:20px;
+                margin-left:auto;
+                margin-right:auto
+                font-size:25px;
+}
+
+img{
+height:50px;
+width:50px;
+}
+.submit_btn {
+  margin: auto;
+  width: 100%;
+  padding: 0px;
+  padding-bottom: 10px;
+}
+
+body {
+background-image: url('../static/images/background.png');
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  overflow:auto;
+  margin: 0 0 0 0;
+}
+.site-footer
+{
+background-color: #3e4444;
+bottom: 0px;
+width: 100%;
+color: #ffffff;
+position:fixed;
+display: inline-block;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+
+</style>
+</head>
+<body>
+    <h1> COVID-19 SELF ASSESSMENT RESULT(#break the chain) </h1>
+    <table id = "information">
+        <th>ASSESSMENT RESULT</th>
+        <tr>
+            <td>{{ message }}</td>
+        </tr>
+    </table>
+    <form class = "corona_form" action = "/" method="GET">
+       <div class="submit_btn">
+           <input id = "submit_button" type="submit" value="Try Again">
+        </div>
+    </form>
+</body>
+<!-- Site footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <pre class="text-justify">
+ Disclaimer
+ 1) Indus Sciences never asks for any confidential, personal and security information.
+ 2) This application developed is for non commercial and personal use.
+ 3) No one should try to copy, reproduce, alter, modify, create derivative works of or
+    publicly display any content displayed on the page without the chief executive permission.
+ 4) We are not storing or replicating any information.
+ 5) This tool is developed as an R&D project for self assessment and self awareness.
+ 6) Adapted from DOH guidelines: <a href = "www.doh.gov.ph">www.doh.gov.ph</a></pre>
+<hr>
+<pre>
+ Chief Executive: krishnarajiv54@gmail.com
+ Chief Developer: auv.india@gmail.com
+</pre>
+<hr>
+<pre class="copyright-text"> Copyright &copy; 2020 All Rights Reserved by Indusscience.</pre>
+</div>
+</footer>
+</html>
