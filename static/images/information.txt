@@ -1,0 +1,1 @@
+This folder of our web application holds the different graphics resources required for our diffrerent pages.
